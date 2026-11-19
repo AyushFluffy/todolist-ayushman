@@ -39,7 +39,7 @@ def create_todo(data: TodoCreate):
     return functions.create_todo(title=data.title, description=data.description, completed=data.completed)
 
 
-@app.get("/Create_todos", response_model=List[TodoResponse])
+@app.get("/Create_todos_test", response_model=List[TodoResponse])
 def get_todos():
     return functions.get_todos()
 
